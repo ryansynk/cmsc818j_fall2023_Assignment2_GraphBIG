@@ -6,9 +6,7 @@ SUBDIR=bench_BFS \
 	   bench_kCore \
 	   bench_shortestPath \
 	   bench_triangleCount \
-	   bench_graphUpdate \
 	   bench_graphConstruct \
-	   bench_TopoMorph \
 	   bench_pageRank \
 	   bench_graphColoring \
 	   ubench_add \
