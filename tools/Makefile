@@ -1,4 +1,4 @@
-PFMDIR=libpfm-4.5.0
+PFMDIR=libpfm-4.13.0
 CXX=g++
 CXX_FLAGS=-I./include -L./lib -O3
 LIBS=-lpfm_cxx -lpfm
