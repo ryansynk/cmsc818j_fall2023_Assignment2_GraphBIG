@@ -17,8 +17,26 @@ or
 ssh <username>@cheezit.cs.umd.edu
 ```
 
+## Cloning The Repository
+Before you can get the code for this project, you must create a public/private ssh key pair for junkfood to connect with your github account. If you have already set up your junkfood account to access your github, you can skip this step. If not, perform the following steps:
+
+1. Create a keypair using ssh-keygen
+```bash
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+With `your_email@example.com` replaced with your github account email.
+
+
+2. Copy the public key to your clipboard
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+Then copy everything that it outputs onto your clipboard.
+
+3. Paste the public key onto your github account: Navigate to your github settings. Under "SSH and GPG keys", you should see a "New SSH Key" Button. Click it, and paste the results into the "Key" field. You can give it whatever name you like.
+
 ## Building the Benchmark
-Once you have logged into krispykreme or cheezit, clone this repository:
+Once you have logged into krispykreme or cheezit and established an ssh connection with github on junkfood, clone this repository:
 ```bash
 git clone git@github.com:ryansynk/cmsc818j_fall2023_Assignment2_GraphBIG.git
 ```
